@@ -1,0 +1,54 @@
+/*! purgecss start ignore */
+@screen all {
+  img {
+    @apply max-w-full;
+  }
+
+  blockquote {
+    @apply m-0 border-0 border-l-4 border-solid pl-8 py-8 bg-white;
+    border-color: #dbdbdb;
+  }
+
+  blockquote > p {
+    @apply inline;
+  }
+
+  td, th {
+    box-sizing: border-box;
+  }
+
+  h2, h3 {
+    @apply mb-0;
+  }
+
+  hr {
+    @apply bg-sepia-100 h-px leading-px border-0;
+  }
+
+  #content a {
+    @apply .text-inherit border-0 border-b-2 border-solid border-sepia-900 no-underline;
+  }
+
+  #content a:hover {
+    @apply .text-brand border-brand;
+  }
+}
+
+@screen sm {
+  u ~ div .wrapper {
+    @apply min-w-screen;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  @apply m-0 p-0 w-full;
+  word-break: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  border: 0;
+  @apply leading-full align-middle;
+}
+/*! purgecss end ignore */
