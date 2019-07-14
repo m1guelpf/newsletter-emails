@@ -1,0 +1,40 @@
+---
+title: "Miguel Piedrafita's Newsletter #2"
+---
+
+{% block template %}
+
+<table class="wrapper bg-sepia-500 w-full all-font-sans">
+  <tr>
+    <td align="center" class="align-middle">
+      <table class="w-700 sm-w-full">
+        <tr>
+          <td class="pt-48 sm-pt-32 text-center sm-px-10">
+            <a href="https://miguelpiedrafita.com" class="text-brand uppercase no-underline text-sm font-semibold tracking-px">Miguel Piedrafita &mdash; 17-year-old developer</a>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" class="sm-px-24">
+            <table class="w-full" id="content">
+              <tr>
+                <td class="text-sepia-900 text-lg px-48 py-24 sm-px-24 leading-28 rounded-lg">
+                  <p class="text-2xl font-semibold bg-white text-brand inline -mx-2 px-2 pb-2 leading-32">👋🏻 Hi! I'm Miguel Piedrafita, a 17-year-old maker from Spain. Here's what I've been up to this week:</p>
+                  {% markdown 'src/partials/content.md' %}
+                </td>
+              </tr>
+              <tr>
+                <td class="text-center text-sepia-300 text-xs p-32 pt-0">
+                  <p class="cursor-default">
+                    Don't like this emails? <a href="[unsubscribe]" class="border-sepia-300 hover-border-brand">Unsubscribe</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+{% endblock %}
