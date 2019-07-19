@@ -18,7 +18,7 @@
   }
 
   h2, h3 {
-    @apply mb-0;
+    @apply mb-0 mt-30;
   }
 
   hr {
